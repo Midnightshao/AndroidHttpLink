@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitiviy.MainActivity3">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="420dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/img_clock">
+
+        <Button
+            android:id="@+id/buttonOpen"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="288dp"
+            android:layout_marginTop="60dp"
+            android:background="@mipmap/img_open"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonAnimal"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="129dp"
+            android:background="@mipmap/anniu"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.ClockTime
+            android:id="@+id/view"
+            android:layout_width="205dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="62dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.example.myapplication.ClockTime>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="100dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="198dp"
+            android:background="@drawable/ripple_rect"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="向上"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/button_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="向下"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="100dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ripple_rect"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linear1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="播报"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="温度"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="100dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ripple_rect"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linear2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="背光"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="声控"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.example.myapplication.ClockTimeExplain
+        android:id="@+id/clickExplain"
+        android:layout_alignParentBottom="true"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        >
+    </com.example.myapplication.ClockTimeExplain>
+
+</RelativeLayout>

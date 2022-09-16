@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/ic_launcher_background"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/plus"
+        android:title="摩天轮在北京"
+        app:showAsAction="always">
+    </item>
+</menu>

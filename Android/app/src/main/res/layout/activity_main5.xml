@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Acitiviy.MainActivity5">
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:translationZ="2dp"
+        android:background="@drawable/ripple_with_selector3"
+        >
+        <RelativeLayout
+            android:id="@+id/relativet"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ripple_with_selector3"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="头像"
+                ></TextView>
+
+            <com.example.myapplication.custom_view.ImageViewCircle1
+                android:id="@+id/ImageHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"></com.example.myapplication.custom_view.ImageViewCircle1>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_400"
+            >
+        </View>
+        <RelativeLayout
+            android:id="@+id/relativet1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ripple_with_selector3"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="昵称"></TextView>
+
+            <ImageView
+                android:id="@+id/tickN"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:visibility="gone"
+                android:src="@mipmap/tick" />
+
+            <TextView
+                android:id="@+id/nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="昵称。。。。"></TextView>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_400"
+            >
+        </View>
+        <RelativeLayout
+            android:id="@+id/relativet2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ripple_with_selector3"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="手机号码"></TextView>
+
+            <ImageView
+                android:id="@+id/tickT"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:visibility="gone"
+                android:src="@mipmap/tick" />
+
+            <TextView
+                android:id="@+id/dianhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="13xxxxxxx"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativet3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ripple_with_selector3"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="密码修改:"></TextView>
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:visibility="gone"
+                android:src="@mipmap/tick" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_400"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="xxxxx"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout0"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="提交"
+        android:textColor="#fff"
+        android:background="@drawable/ripple_rect5"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitiviy.MainActivity2">
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"></WebView>
+
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="返回"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/webView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonPanel"
+        app:layout_constraintTop_toBottomOf="@id/button123"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="进入模拟器"
+        ></Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

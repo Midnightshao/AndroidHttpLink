@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitiviy.MainActivity4">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/light_blue_400"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationZ="5dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:src="@mipmap/person13"
+            ></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editTextTextUsername"
+            android:background="@drawable/ripple_rect3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:translationZ="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:ems="10"
+            android:hint="姓名:"
+            android:textSize="26dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:padding="10dp"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:padding="10dp"
+            android:translationZ="2dp"
+            android:background="@drawable/ripple_rect3"
+            android:ems="10"
+            android:hint="密码:"
+            android:textSize="26dp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/loginApp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ripple_with_selector2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:textColor="#fff"
+            ></Button>
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginLeft="40dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/register"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:text="注册"
+                   android:layout_marginLeft="5dp"
+                   android:layout_alignParentLeft="true"
+                   ></TextView>
+               <TextView
+                   android:textSize="16sp"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="忘记密码"
+                   ></TextView>
+           </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

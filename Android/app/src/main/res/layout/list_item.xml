@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_400"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/fab_margin1"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        android:clickable="true"
+        android:background="@drawable/ripple_with_selector1"
+        android:layout_marginBottom="@dimen/fab_margin1">
+
+        <com.example.myapplication.custom_view.ImageVIewTool
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center|top"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/imageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:maxEms="20"
+            android:layout_marginBottom="5dp"
+            android:text="这是一款不错  \n今天好天气"
+            >
+        </TextView>
+<!--        <TextView-->
+<!--            android:id="@+id/TextViewButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textColor="#000"-->
+<!--            android:text="这是一款不错  \n今天好天气"-->
+<!--            >-->
+<!--        </TextView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:translationZ="10dp"
+        android:clickable="true"
+        android:background="@drawable/ripple_with_selector1"
+        android:layout_marginRight="@dimen/fab_margin1"
+        android:layout_marginBottom="@dimen/fab_margin1">
+
+        <com.example.myapplication.custom_view.ImageVIewTool
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center|top"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/imageText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:layout_marginTop="3sp"
+            android:textSize="12sp"
+            android:maxEms="20"
+            android:layout_marginBottom="5dp"
+            android:text="这是一款不错  \n今天好天气"
+            ></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
